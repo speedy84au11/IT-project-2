@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<title>s3923089</title>
+		<link rel="stylesheet" href="web.css" />
+	</header>
+	<body>
+		<div class="row">
+			<div class="ba">
+				<div class="top align head">
+					<a href="ideal.html" class="link">Ideal Jobs</a>
+				</div>
+				<div class="top align head">
+					<a href="team.html" class="link">Team profile</a>
+				</div>
+				<div class="top align head">
+					<a href="index.html" class="link">Home</a>
+				</div>
+				<div class="top align head">
+					<a href="tools.html" class="link">Tools</a>
+				</div>
+				<div class="top align head">
+					<a href="industry.html" class="link">Industry Data</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="ba">
+				<div class="top align head">
+					<a href="it_work.html" class="link">IT Work</a>
+				</div>
+				<div class="top align head">
+					<a href="it_tech.html" class="link">IT Technologies</a>
+				</div>
+				<div class="top align head">
+					<a href="project.html" class="link">Project Ideas</a>
+				</div>
+				<div class="top align head">
+					<a href="feedback.html" class="link">Feedback</a>
+				</div>
+				<div class="top align head">
+					<a href="group.html" class="link">Group Reflection</a>
+				</div>
+			</div>
+		</div>
+		<img src="park.jpg" alt="image of Saint James park taken by Michail Christofis" class="theimage" />
+		<div class="title">Team profile</div>
+		<div class="row">
+			<h3 class="col col-xs-20">Michail Christofis</h3>
+			<h3 class="col col-xs-20">Colin Stock</h3>
+			<h3 class="col col-xs-20">Samuel Saad</h3>
+			<h3 class="col col-xs-20">Andrew Smith</h3>
+			<h3 class="col col-xs-20">Michele De Biasi</h3>
+		</div>
+		<div class="row">
+			<div class="column">
+				<button id="my_first_button" style="background: none">
+					<img src="aquarium.jpg" alt="a picture of me" class="col align col-xs-7" />
+				</button>
+			</div>
+			<div class="column">
+				<button id="my_second_button" style="background: none">
+					<img src="aquarium.jpg" alt="a picture of me" class="col align col-xs-7" />
+				</button>
+			</div>
+			<div class="column">
+				<button id="my_third_button" style="background: none">
+					<img src="aquarium.jpg" alt="a picture of me" class="col align col-xs-7" />
+				</button>
+			</div>
+			<div class="column">
+				<button id="my_fourth_button" style="background: none">
+					<img src="aquarium.jpg" alt="a picture of me" class="col align col-xs-7" />
+				</button>
+			</div>
+			<div class="column">
+				<button id="my_fifth_button" style="background: none">
+					<img src="aquarium.jpg" alt="a picture of me" class="col align col-xs-7" />
+				</button>
+			</div>
+		</div>
+		<div id="my_first_modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Modal1</p>
+			</div>
+		</div>
+		<div id="my_second_modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Modal2</p>
+			</div>
+		</div>
+		<div id="my_third_modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Modal3</p>
+			</div>
+		</div>
+		<div id="my_fourth_modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Modal4</p>
+			</div>
+		</div>
+		<div id="my_fifth_modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Modal5</p>
+			</div>
+		</div>
+		<script>
+			var first_button = document.getElementById("my_first_button");
+			var second_button = document.getElementById("my_second_button");
+			var third_button = document.getElementById("my_third_button");
+			var fourth_button = document.getElementById("my_fourth_button");
+			var fifth_button = document.getElementById("my_fifth_button");
+			var first_modal = document.getElementById("my_first_modal");
+			var second_modal = document.getElementById("my_second_modal");
+			var third_modal = document.getElementById("my_third_modal");
+			var fourth_modal = document.getElementById("my_fourth_modal");
+			var fifth_modal = document.getElementById("my_fifth_modal");
+			var first_span = document.getElementsByClassName("close")[0];
+			var second_span = document.getElementsByClassName("close")[1];
+			var third_span = document.getElementsByClassName("close")[2];
+			var fourth_span = document.getElementsByClassName("close")[3];
+			var fifth_span = document.getElementsByClassName("close")[4];
+			first_button.onclick = function () {
+				first_modal.style.display = "block";
+			};
+			second_button.onclick = function () {
+				second_modal.style.display = "block";
+			};
+			third_button.onclick = function () {
+				third_modal.style.display = "block";
+			};
+			fourth_button.onclick = function () {
+				fourth_modal.style.display = "block";
+			};
+			fifth_button.onclick = function () {
+				fifth_modal.style.display = "block";
+			};
+			first_span.onclick = function () {
+				first_modal.style.display = "none";
+			};
+			second_span.onclick = function () {
+				second_modal.style.display = "none";
+			};
+			third_span.onclick = function () {
+				third_modal.style.display = "none";
+			};
+			fourth_span.onclick = function () {
+				fourth_modal.style.display = "none";
+			};
+			fifth_span.onclick = function () {
+				fifth_modal.style.display = "none";
+			};
+			window.onclick = function (event) {
+				if (event.target == first_modal) {
+					first_modal.style.display = "none";
+				}
+				if (event.target == second_modal) {
+					second_modal.style.display = "none";
+				}
+				if (event.target == third_modal) {
+					third_modal.style.display = "none";
+				}
+				if (event.target == fourth_modal) {
+					fourth_modal.style.display = "none";
+				}
+				if (event.target == fifth_modal) {
+					fifth_modal.style.display = "none";
+				}
+			};
+		</script>
+	</body>
+	<footer>
+		<div class="row">
+			<div class="footer-bar"></div>
+			<div class="align">&copy; 2021</div>
+			<div class="align">The content of this website</div>
+			<div class="align">including images and text,</div>
+			<div class="align">are the property of</div>
+			<div class="align">Dropbears</div>
+		</div>
+	</footer>
+</html>

@@ -315,6 +315,12 @@ h3 {
 		width: 8.3323%;
 	}
 }
+
+@media screen and (min-width: 1600px) {
+	.col-xl-3 {
+		width: 25%;
+	}
+}
 .align {
 	text-align: center;
 }
